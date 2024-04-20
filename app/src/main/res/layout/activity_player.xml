@@ -1,0 +1,63 @@
+<!-- Copyright (C) 2017 The Android Open Source Project
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Two stacked PlayerViews, each one has different controls, for different types of video -->
+    <!-- Depending on the video type, one PlayerView is attached to the Player and the other is hidden -->
+    <!-- We need more than one PlayerView because ExoPlayer custom controls cannot be changed at runtime -->
+
+    <ch.swisshomeguard.ui.player.ZoomableExoPlayerView
+        android:id="@+id/eventPlayerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:controller_layout_id="@layout/custom_playback_control_event"
+        app:fastforward_increment="10000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rewind_increment="10000"
+        app:show_buffering="when_playing"
+        app:show_timeout="5000"
+        app:surface_type="texture_view" />
+
+    <ch.swisshomeguard.ui.player.ZoomableExoPlayerView
+        android:id="@+id/livePlayerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:controller_layout_id="@layout/custom_playback_control_live"
+        app:fastforward_increment="10000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rewind_increment="10000"
+        app:show_buffering="when_playing"
+        app:show_timeout="5000"
+        app:surface_type="texture_view" />
+
+    <!-- Remove app:controller_layout_id to use the exo_playback_control_view.xml in the res/layout folder
+        If no file is present in that folder, the default exo_playback_control_view.xml from the ExoPlayer source code
+        will be used -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

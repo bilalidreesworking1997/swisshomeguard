@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/exo_ffwd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/exo_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/exo_pause"
+        app:layout_constraintTop_toTopOf="@+id/exo_pause"
+        app:srcCompat="@drawable/ic_forward" />
+
+    <ImageView
+        android:id="@+id/exo_rew"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/exo_play"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_backward" />
+
+    <ImageView
+        android:id="@+id/exo_play"
+        style="@style/ExoMediaButton.Play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/exo_rew"
+        app:layout_constraintEnd_toStartOf="@+id/exo_pause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/exo_rew"
+        app:layout_constraintTop_toTopOf="@+id/exo_rew" />
+
+    <ImageView
+        android:id="@+id/exo_pause"
+        style="@style/ExoMediaButton.Pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/exo_play"
+        app:layout_constraintEnd_toStartOf="@+id/exo_ffwd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/exo_play"
+        app:layout_constraintTop_toTopOf="@+id/exo_play" />
+
+    <View
+        android:id="@id/exo_progress_placeholder"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/exo_prev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/exo_prev"
+        style="@style/ExoMediaButton.Previous"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/exo_next"
+        style="@style/ExoMediaButton.Next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/liveOrEventsIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_eye"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/liveOrEventsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="To Live"
+        android:textColor="@color/colorText"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/liveOrEventsIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liveOrEventsIcon"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/eventCloseIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+
+    <Button
+        android:id="@+id/snapshotButton"
+        style="@style/ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/player_snapshot"
+        app:icon="@drawable/ic_baseline_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/saveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/saveButton" />
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_save"
+        app:icon="@drawable/ic_baseline_save"
+        app:layout_constraintBottom_toBottomOf="@+id/eventCloseIcon"
+        app:layout_constraintEnd_toStartOf="@+id/eventCloseIcon"
+        app:layout_constraintStart_toEndOf="@+id/snapshotButton"
+        app:layout_constraintTop_toTopOf="@+id/eventCloseIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="login_email_hint">E-Mail</string>
+    <string name="login_password_hint">Mot de passe</string>
+    <string name="login_privacy_policy">En continuant, vous acceptez les conditions d\'utilisation et la politique de confidentialité.</string>
+    <string name="login_button">Se connecter</string>
+    <string name="title_activity_bottom_nav">Activité principale</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_cameras">Caméras</string>
+    <string name="title_search">Rechercher</string>
+    <string name="title_settings">Paramètres</string>
+    <string name="home_system_connected">Système connecté</string>
+    <string name="home_all_cameras_healthy">Toutes les caméras fonctionnent</string>
+    <string name="home_recording_enabled">Enregistrement vidéo</string>
+    <string name="home_recording_disabled">Enregistrement vidéo</string>
+    <string name="home_alarm_central_enabled">Centrale d\'alarme</string>
+    <string name="home_alarm_central_disabled">Centrale d\'alarme</string>
+    <string name="home_alarm_signal_is_on">Sirène</string>
+    <string name="home_alarm_signal_is_off">Sirène</string>
+    <string name="home_alarm_dialog_title">Activation de la sirène</string>
+    <string name="home_alarm_dialog_message">Êtes-vous sûr de vouloir activer la sirène ?</string>
+    <string name="home_alarm_dialog_negative_button">Annuler</string>
+    <string name="home_alarm_dialog_positive_button">Activer la sirène</string>
+    <string name="home_alarm_sent_toast">Sirène activée</string>
+
+    <string name="home_alarm_dialog_title_deactivation">Désactivation de la sirène</string>
+    <string name="home_alarm_dialog_message_deactivation">Etes-vous sûr de vouloir désactiver la sirène ?</string>
+    <string name="home_alarm_sent_toast_deactivation">Sirène désactivée</string>
+
+    <string name="video_recording_activation">Activation de l\'enregistrement vidéo</string>
+    <string name="video_recording_activation_message">Etes-vous sûr de vouloir activer l\'enregistrement vidéo ?</string>
+    <string name="video_recording_activated"> Enregistrement vidéo activé</string>
+    <string name="activate_video_recording">Activer l\'enregistrement vidéo</string>
+
+    <string name="video_recording_deactivation">Désactivation de l\'enregistrement vidéo</string>
+    <string name="video_recording_deactivation_message">Etes-vous sûr de vouloir désactiver l\'enregistrement vidéo ?</string>
+    <string name="deactivate_video_recording">Désactiver l\'enregistrement vidéo</string>
+
+    <string name="alarm_central_activation">Centrale d\'alarme Activation</string>
+    <string name="alarm_central_activation_message">Êtes-vous sûr de vouloir activer la centrale d\'alarme ?</string>
+    <string name="alarm_central_activated">Centrale d\'alarme activée</string>
+    <string name="activate_alarm_central">Activer l\'enregistrement de la centrale d\'alarme</string>
+
+    <string name="alarm_central_deactivation">Désactivation de la centrale d\'alarme</string>
+    <string name="alarm_central_deactivation_message">Etes-vous sûr de vouloir désactiver la centrale d\'alarme ?</string>
+    <string name="deactivate_alarm_central">Désactiver l\'enregistrement de la centrale d\'alarme</string>
+
+    <string name="automatic_calendar_control_activation">Activation du contrôle automatique du calendrier</string>
+    <string name="automatic_calendar_control_activation_message">Êtes-vous sûr de vouloir activer le contrôle automatique du calendrier ?</string>
+    <string name="automatic_calendar_control_activated">Contrôle automatique du calendrier activé</string>
+    <string name="activate_calendar_control">Activer le contrôle automatique du calendrier</string>
+
+    <string name="automatic_calendar_control_deactivation">Désactivation automatique du contrôle du calendrier</string>
+    <string name="automatic_calendar_control_deactivation_message">Etes-vous sûr de vouloir désactiver le contrôle automatique du calendrier ?</string>
+    <string name="deactivate_calendar_control">Désactiver le contrôle automatique du calendrier</string>
+
+
+    <string name="camera_monitoring_state">Surveillance</string>
+    <string name="camera_alarm_state">Centrale d\'alarme activée</string>
+    <string name="search_camera_filter_title">Sélectionner les caméras</string>
+    <string name="search_camera_filter_select">Sélectionner</string>
+    <string name="search_camera_filter_cancel">Annuler</string>
+    <string name="player_snapshot">Photo</string>
+    <string name="player_save">Sauvegarder</string>
+    <string name="player_video_file">video</string>
+    <string name="player_saving_video">Sauvegarde de la vidéo</string>
+    <string name="player_video_saved">Vidéo sauvegardée</string>
+    <string name="settings_general_header">Général</string>
+    <string name="settings_push_notifications">Notifications push</string>
+    <string name="settings_maintenance_mode">Mode maintenance</string>
+    <string name="settings_additional_confirmation">Confirmation Supplémentaire</string>
+    <string name="settings_support_header">Support</string>
+    <string name="settings_help">Aide</string>
+    <string name="settings_about">A propos de SwissHomeguard</string>
+    <string name="settings_feedback">Envoyer un message</string>
+    <string name="settings_support">Soutien</string>
+    <string name="settings_version">Version de l\'application</string>
+    <string name="settings_log_out">Déconnexion</string>
+    <string name="notification_channel_event">Événement</string>
+    <string name="home_calendar_is_on">Plan de protection</string>
+    <string name="home_calendar_is_off">Plan de protection</string>
+    <!--forgot password translation -->
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="submit">Envoyer</string>
+    <string name="resetPasswordDescription">Indiquez ici votre adresse e-mail. Nous vous enverrons un lien pour réinitialiser votre mot de passe.</string>
+    <string name="resetPassword">réinitialiser le mot de passe</string>
+    <string name="forgotPasswordErrorMessage">Quelque chose sest mal passé essaie encore</string>
+    <string name="forgotPasswordSuccessMessage">Lien envoyé avec succès</string>
+    <string name="noInternetConnectivity">Pas de connexion Internet (stable), connexion impossible.</string>
+    <string name="invalidCredentials">Données de connexion incorrectes.</string>
+    ​
+</resources>

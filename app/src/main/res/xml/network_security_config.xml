@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">swisshomeguard.com</domain>
+        <pin-set>
+            <!-- Keys can be found at https://www.ssllabs.com/ssltest/analyze.html?d=api.prd.swisshomeguard.com -->
+            <pin digest="SHA-256">6d8pw3G7smEJ616burNksKc5rCGSJ0xxPxq5DXqmgSA=</pin>
+            <pin digest="SHA-256">S0mHTmqv2QhJEfy5vyPVERSnyMEliJzdC8RXduOjhAs=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>

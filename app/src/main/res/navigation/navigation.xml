@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ch.swisshomeguard.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_navigation_home_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="shouldReload"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_cameras"
+        android:name="ch.swisshomeguard.ui.cameras.CamerasFragment"
+        android:label="@string/title_cameras"
+        tools:layout="@layout/fragment_cameras">
+        <action
+            android:id="@+id/action_navigation_cameras_to_cameraDetailsFragment"
+            app:destination="@id/cameraDetailsFragment"
+            app:popUpTo="@id/navigation_cameras"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="ch.swisshomeguard.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_navigation_dashboard_to_cameraSelectionFragment2"
+            app:destination="@id/cameraSelectionFragment2" />
+        <action
+            android:id="@+id/action_navigation_search_to_playerActivity"
+            app:destination="@id/playerActivity" />
+        <action
+            android:id="@+id/action_navigation_search_to_eventPlayerActivity"
+            app:destination="@id/eventPlayerActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="ch.swisshomeguard.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_navigation_settings_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraSelectionFragment2"
+        android:name="ch.swisshomeguard.ui.search.cameraselection.CameraSelectionFragment"
+        android:label="CameraSelectionFragment" />
+    <fragment
+        android:id="@+id/cameraDetailsFragment"
+        android:name="ch.swisshomeguard.ui.cameras.cameradetails.CameraDetailsFragment"
+        android:label="camera_details_fragment"
+        tools:layout="@layout/camera_details_fragment">
+        <argument
+            android:name="streamChannelUrl"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="cameraImageUrl"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_cameraDetailsFragment_to_playerActivity"
+            app:destination="@id/playerActivity" />
+        <argument
+            android:name="systemDeviceId"
+            app:argType="integer" />
+        <argument
+            android:name="systemId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ch.swisshomeguard.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_navigation_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="ch.swisshomeguard.ui.forgotpassword.ForgotPasswordFragment"
+        android:label="forgotPassword_fragment"
+        tools:layout="@layout/fragment_forgot_password">
+
+        <action
+            android:id="@+id/action_navigation_forgotPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <activity
+        android:id="@+id/playerActivity"
+        android:name="ch.swisshomeguard.ui.player.PlayerActivity"
+        android:label="PlayerActivity">
+        <argument
+            android:name="videoType"
+            app:argType="ch.swisshomeguard.ui.player.PlayerActivity$VideoType" />
+        <argument
+            android:name="eventStreams"
+            android:defaultValue="@null"
+            app:argType="string[]"
+            app:nullable="true" />
+        <argument
+            android:name="eventPosition"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="liveStream"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+    </activity>
+    <activity
+        android:id="@+id/eventPlayerActivity"
+        android:name="ch.swisshomeguard.ui.player.EventPlayerActivity"
+        android:label="EventPlayerActivity">
+        <argument
+            android:name="systemId"
+            app:argType="integer" />
+        <argument
+            android:name="eventId"
+            app:argType="integer" />
+    </activity>
+
+</navigation>

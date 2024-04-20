@@ -1,0 +1,76 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/settings_general_header">
+
+        <ListPreference
+            android:icon="@drawable/ic_settings_notifications"
+            app:key="@string/pref_key_notification_list"
+            app:title="@string/settings_push_notifications"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_settings_maintenance"
+            app:key="@string/pref_key_maintenance"
+            app:title="@string/settings_maintenance_mode" />
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_additional_confirmation"
+            app:key="@string/pref_key_additional_confirmation"
+            app:title="@string/settings_additional_confirmation" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_support_header">
+
+        <Preference
+            android:icon="@drawable/ic_settings_help"
+            android:key="@string/pref_key_help"
+            android:title="@string/settings_help">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.swisshomeguard.ch/support" />
+        </Preference>
+
+        <!-- TODO replace link with the correct one -->
+        <Preference
+            android:icon="@drawable/ic_settings_document"
+            android:key="@string/pref_key_about"
+            android:title="@string/settings_about">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.swisshomeguard.ch/" />
+        </Preference>
+
+        <Preference
+            android:icon="@drawable/ic_settings_feedback"
+            android:key="@string/pref_key_feedback"
+            android:title="@string/settings_feedback">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="mailto:service@swisshomeguard.ch" />
+        </Preference>
+
+        <!-- TODO replace link with the correct one -->
+        <Preference
+            android:icon="@drawable/ic_settings_support"
+            android:key="@string/pref_key_support"
+            android:title="@string/settings_support">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.swisshomeguard.ch/support" />
+        </Preference>
+
+        <Preference
+            android:icon="@drawable/ic_settings_info"
+            android:key="@string/pref_key_version"
+            android:title="@string/settings_version" />
+
+        <Preference
+            android:icon="@drawable/ic_settings_exit"
+            android:key="@string/pref_key_logout"
+            android:title="@string/settings_log_out" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

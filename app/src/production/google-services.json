@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "28452136381",
+    "firebase_url": "https://swisshomeguard-673e0.firebaseio.com",
+    "project_id": "swisshomeguard-673e0",
+    "storage_bucket": "swisshomeguard-673e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28452136381:android:373888a43af830c36c9ed4",
+        "android_client_info": {
+          "package_name": "ch.swisshomeguard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28452136381-s4q85b1kqqq8nn46jjrnbq3jg9kekdpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeqibiLGJKV5Z0fmypEbYgMyQdHBDe7zg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28452136381-s4q85b1kqqq8nn46jjrnbq3jg9kekdpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    ​
+    <!-- Login -->
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Passwort</string>
+    <string name="login_privacy_policy">Indem Sie fortfahren, erklären Sie sich mit den Nutzungsbedingungen und der Datenschutzrichtlinien einverstanden.</string>
+    <string name="login_button">Anmelden</string>
+    ​
+    <!-- Bottom tabs -->
+    <string name="title_activity_bottom_nav">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_cameras">Kameras</string>
+    <string name="title_search">Suche</string>
+    <string name="title_settings">Einstellungen</string>
+    ​
+    <!-- Home -->
+    <string name="home_system_connected">System verbunden</string>
+    <string name="home_all_cameras_healthy">Alle Kameras funktionsfähig</string>
+    <string name="home_recording_enabled">Videoaufzeichnung</string>
+    <string name="home_recording_disabled">Videoaufzeichnung</string>
+    <string name="home_alarm_central_enabled">Alarmzentrale</string>
+    <string name="home_alarm_central_disabled">Alarmzentrale</string>
+    <string name="home_alarm_signal_is_on">Sirene</string>
+    <string name="home_alarm_signal_is_off">Sirene</string>
+    <string name="home_calendar_is_on">Automatische Kalendersteuerung</string>
+    <string name="home_calendar_is_off">Automatische Kalendersteuerung</string>
+    <string name="home_alarm_dialog_title">Sirenenaktivierung</string>
+    <string name="home_alarm_dialog_message">Möchten Sie die Sirene wirklich aktivieren?</string>
+    <string name="home_alarm_dialog_negative_button">Abbrechen</string>
+    <string name="home_alarm_dialog_positive_button">Sirene aktivieren</string>
+    <string name="home_alarm_sent_toast">Sirene aktiviert</string>
+
+    <string name="home_alarm_dialog_title_deactivation">Deaktivierung der Sirene</string>
+    <string name="home_alarm_dialog_message_deactivation">Sind Sie sicher, dass Sie die Sirene deaktivieren möchten?</string>
+    <string name="home_alarm_sent_toast_deactivation">Sirene deaktiviert</string>
+
+    <string name="video_recording_activation">Aktivierung der Videoaufzeichnung</string>
+    <string name="video_recording_activation_message">Sind Sie sicher, dass Sie die Videoaufzeichnung aktivieren möchten?</string>
+    <string name="video_recording_activated">Videoaufzeichnung aktiviert</string>
+    <string name="activate_video_recording">Videoaufzeichnung aktivieren</string>
+
+    <string name="video_recording_deactivation">Deaktivierung der Videoaufzeichnung</string>
+    <string name="video_recording_deactivation_message">Möchten Sie die Videoaufzeichnung wirklich deaktivieren?</string>
+    <string name="deactivate_video_recording">Videoaufzeichnung deaktivieren</string>
+
+    <string name="alarm_central_activation">Aktivierung der Alarmzentrale</string>
+    <string name="alarm_central_activation_message">Sind Sie sicher, dass Sie die Alarmzentrale aktivieren möchten?</string>
+    <string name="alarm_central_activated">Alarmzentrale aktiviert</string>
+    <string name="activate_alarm_central">Aktivieren Sie die Aufzeichnung der Alarmzentrale</string>
+
+    <string name="alarm_central_deactivation">Deaktivierung der Alarmzentrale</string>
+    <string name="alarm_central_deactivation_message">Sind Sie sicher, dass Sie die Alarmzentrale deaktivieren möchten?</string>
+    <string name="deactivate_alarm_central">Deaktivieren Sie die Aufzeichnung der Alarmzentrale</string>
+
+    <string name="automatic_calendar_control_activation">Automatische Aktivierung der Kalendersteuerung</string>
+    <string name="automatic_calendar_control_activation_message">Sind Sie sicher, dass Sie die automatische Kalendersteuerung aktivieren möchten?</string>
+    <string name="automatic_calendar_control_activated">Automatische Kalendersteuerung aktiviert</string>
+    <string name="activate_calendar_control">Aktivieren Sie die automatische Kalendersteuerung</string>
+
+    <string name="automatic_calendar_control_deactivation">Automatische Deaktivierung der Kalendersteuerung</string>
+    <string name="automatic_calendar_control_deactivation_message">Sind Sie sicher, dass Sie die automatische Kalendersteuerung deaktivieren möchten?</string>
+    <string name="deactivate_calendar_control">Deaktivieren Sie die automatische Kalendersteuerung</string>
+
+    ​
+    <!-- Cameras -->
+    <string name="camera_monitoring_state">Überwachung</string>
+    <string name="camera_alarm_state">Alarmzentrale aktiviert</string>
+    ​
+    <!-- Search -->
+    <string name="search_camera_filter_title">Kameras auswählen</string>
+    <string name="search_camera_filter_select">Auswählen</string>
+    <string name="search_camera_filter_cancel">Abbrechen</string>
+
+    <!-- Player -->
+    <string name="player_snapshot">Foto</string>
+    <string name="player_save">Speichern</string>
+    <string name="player_video_file">video</string>
+    <string name="player_saving_video">Video speichern</string>
+    <string name="player_video_saved">Video gespeichert</string>
+
+    <!-- Settings -->
+    <string name="settings_general_header">Allgemeines</string>
+    <string name="settings_push_notifications">Push-Benachrichtigungen</string>
+    <string name="settings_maintenance_mode">Wartungsmodus</string>
+    <string name="settings_additional_confirmation">Zusätzliche Bestätigung</string>
+    <string name="settings_support_header">Support</string>
+    <string name="settings_help">Hilfe</string>
+    <string name="settings_about">Über SwissHomeguard</string>
+    <string name="settings_feedback">Feedback senden</string>
+    <string name="settings_support">Support</string>
+    <string name="settings_version">App Version</string>
+    <string name="settings_log_out">Abmelden</string>
+    ​
+    <!-- Settings (not translatable)-->
+    <string name="pref_key_push" translatable="false">push</string> <!-- not used anymore -->
+    <string name="pref_key_notification_list" translatable="false">notification_list</string>
+    <string name="pref_key_maintenance" translatable="false">maintenance</string>
+    <string name="pref_key_additional_confirmation" translatable="false">additional_confirmation</string>
+    <string name="pref_key_help" translatable="false">help</string>
+    <string name="pref_key_about" translatable="false">about</string>
+    <string name="pref_key_feedback" translatable="false">feedback</string>
+    <string name="pref_key_support" translatable="false">support</string>
+    <string name="pref_key_version" translatable="false">version</string>
+    <string name="pref_key_logout" translatable="false">logout</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_event">Event</string>
+
+    <!-- Dummy media files -->
+    <string name="dummy_camera_image" translatable="false">"https://api-staging.swisshomeguard.com/api/user/stream/image/7/1"</string>
+    <string name="dummy_hls" translatable="false">https://api-staging.swisshomeguard.com/test/index.m3u8</string>
+    <string name="dummy_mp4" translatable="false"><![CDATA[https://minio-mock-dev.swisshomeguard.com/046b6c7f-0b8a-43b9-b35d-6489e6daee91/9e80c782-4007-43c3-9230-22293a75cb95.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minio%2F20201014%2F%2Fs3%2Faws4_request&X-Amz-Date=20201014T132152Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=efffc53a77adad19d17fdec950ddc95f37189b0e4eec9c8f29b2fe6120261a56]]></string>
+    <!--forgot password translation -->
+    <string name="forgot_password">Passwort vergessen?</string>
+    <string name="submit">Absenden</string>
+    <string name="resetPasswordDescription">Geben Sie hier Ihre E-Mail Adresse ein. Wir senden Ihnen einen Link zum Zurücksetzen des Passwortes.</string>
+    <string name="resetPassword">Passwort zurücksetzen</string>
+    <string name="forgotPasswordErrorMessage">Etwas ging schief, versuche es erneut</string>
+    <string name="forgotPasswordSuccessMessage">Link erfolgreich gesendet</string>
+    <string name="noInternetConnectivity">Keine (stabile) Internetverbindung, Verbindung nicht möglich.</string>
+    <string name="invalidCredentials">Anmeldedaten inkorrekt.</string>
+</resources>

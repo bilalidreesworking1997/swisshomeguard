@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="login_email_hint">E-Mail</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_privacy_policy">By continuing, you agree to the Terms of Use and Privacy Policy.</string>
+    <string name="login_button">Login</string>
+    <string name="title_activity_bottom_nav">Main activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_cameras">Cameras</string>
+    <string name="title_search">Search</string>
+    <string name="title_settings">Settings</string>
+    <string name="home_system_connected">System connected</string>
+    <string name="home_all_cameras_healthy">All cameras work</string>
+    <string name="home_recording_enabled">Video recording</string>
+    <string name="home_recording_disabled">Video recording</string>
+    <string name="home_alarm_central_enabled">Alarm central</string>
+    <string name="home_alarm_central_disabled">Alarm central</string>
+    <string name="home_alarm_signal_is_on">Siren</string>
+    <string name="home_alarm_signal_is_off">Siren</string>
+    <string name="home_alarm_dialog_negative_button">Cancel</string>
+
+    <string name="home_alarm_dialog_title">Siren activation</string>
+    <string name="home_alarm_dialog_message">Are you sure you want to activate the siren?</string>
+    <string name="home_alarm_dialog_positive_button">Activate siren</string>
+    <string name="home_alarm_sent_toast">Siren activated</string>
+
+    <string name="home_alarm_dialog_title_deactivation">Siren deactivation</string>
+    <string name="home_alarm_dialog_message_deactivation">Are you sure you want to deactivate the siren?</string>
+    <string name="home_alarm_sent_toast_deactivation">Siren deactivated</string>
+
+    <string name="video_recording_activation">Video recording activation</string>
+    <string name="video_recording_activation_message">Are you sure you want to activate the Video recording?</string>
+    <string name="video_recording_activated">Video Recording activated</string>
+    <string name="activate_video_recording">Activate video recording</string>
+
+    <string name="video_recording_deactivation">Video recording deactivation</string>
+    <string name="video_recording_deactivation_message">Are you sure you want to deactivate the Video recording?</string>
+    <string name="deactivate_video_recording">Deactivate video recording</string>
+
+    <string name="alarm_central_activation">Alarm central activation</string>
+    <string name="alarm_central_activation_message">Are you sure you want to activate the Alarm central?</string>
+    <string name="alarm_central_activated">Alarm central activated</string>
+    <string name="activate_alarm_central">Activate Alarm central recording</string>
+
+    <string name="alarm_central_deactivation">Alarm central deactivation</string>
+    <string name="alarm_central_deactivation_message">Are you sure you want to deactivate the Alarm central?</string>
+    <string name="deactivate_alarm_central">Deactivate Alarm central recording</string>
+
+    <string name="automatic_calendar_control_activation">Automatic calendar control activation</string>
+    <string name="automatic_calendar_control_activation_message">Are you sure you want to activate the Automatic calendar control?</string>
+    <string name="automatic_calendar_control_activated">Automatic calendar control activated</string>
+    <string name="activate_calendar_control">Activate Automatic calendar control</string>
+
+    <string name="automatic_calendar_control_deactivation">Automatic calendar control deactivation</string>
+    <string name="automatic_calendar_control_deactivation_message">Are you sure you want to deactivate the Automatic calendar control?</string>
+    <string name="deactivate_calendar_control">Deactivate Automatic calendar control</string>
+
+    <string name="camera_monitoring_state">Monitoring</string>
+    <string name="camera_alarm_state">Central alarm activated</string>
+    <string name="search_camera_filter_title">Select cameras</string>
+    <string name="search_camera_filter_select">Select</string>
+    <string name="search_camera_filter_cancel">Cancel</string>
+    <string name="player_snapshot">Snapshot</string>
+    <string name="player_save">Save</string>
+    <string name="player_video_file">video</string>
+    <string name="player_saving_video">Saving video</string>
+    <string name="player_video_saved">Video saved</string>
+    <string name="settings_general_header">General</string>
+    <string name="settings_push_notifications">Push notifications</string>
+    <string name="settings_maintenance_mode">Maintenance mode</string>
+    <string name="settings_additional_confirmation">Additional Confirmation</string>
+    <string name="settings_support_header">Support</string>
+    <string name="settings_help">Help</string>
+    <string name="settings_about">About SwissHomeguard</string>
+    <string name="settings_feedback">Send feedback</string>
+    <string name="settings_support">Support</string>
+    <string name="settings_version">App version</string>
+    <string name="settings_log_out">Logout</string>
+    <string name="notification_channel_event">Event</string>
+    <string name="home_calendar_is_on">Automatic calendar control</string>
+    <string name="home_calendar_is_off">Automatic calendar control</string>
+    <!--forgot password translation -->
+    <string name="forgot_password">Forgot password?</string>
+    <string name="submit">Send</string>
+    <string name="resetPasswordDescription">Enter your email address here. We will send you a link to reset the password.</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="forgotPasswordErrorMessage">Something went wrong, try again</string>
+    <string name="forgotPasswordSuccessMessage">Link successfully sent</string>
+    <string name="noInternetConnectivity">There is no internet connection, try again with a stable connection.</string>
+    <string name="invalidCredentials">Login credentials incorrect.</string>
+</resources>
