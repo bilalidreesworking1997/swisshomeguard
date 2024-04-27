@@ -112,11 +112,17 @@ interface WebService {
     @PUT("user/setting")
     suspend fun setNotificationStatus(@Body notificationEnabledSet: NotificationEnabledSet)
 
-    @GET("$BASE_URL/{streamChannelUrl}")
-    suspend fun fetchVideo(@Path("streamChannelUrl") streamChannelUrl: String): VideoChannelResponse
+    //    @GET("$BASE_URL/{streamChannelUrl}")
+//    suspend fun fetchVideo(@Path("streamChannelUrl") streamChannelUrl: String): VideoChannelResponse
 
-    @GET("$BASE_URL/{keepAliveUrl}")
-    suspend fun keepVideoAlive(@Path("keepAliveUrl") keepAliveUrl: String): VideoChannelResponse
+    @GET("user/stream/video/{id}/channel/2")
+    suspend fun fetchVideo(@Path("id") streamChannelUrl: String): VideoChannelResponse
+
+//    @GET("$BASE_URL/{keepAliveUrl}")
+//    suspend fun keepVideoAlive(@Path("keepAliveUrl") keepAliveUrl: String): VideoChannelResponse
+
+    @GET("user/stream/video/{id}/channel/2/keepAlive")
+    suspend fun keepVideoAlive(@Path("id") keepAliveUrl: String): VideoChannelResponse
 
     @POST("auth/logout")
     suspend fun logout()

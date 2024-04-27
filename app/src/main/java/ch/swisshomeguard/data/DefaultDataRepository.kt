@@ -214,8 +214,10 @@ class DefaultDataRepository(private val webService: WebService) : DataRepository
     override suspend fun fetchVideo(streamChannelUrl: String): Result<VideoChannel> {
         Log.d("VIDEO_TAG", "Repository: Fetch video")
         return try {
+//            val data =
+//                webService.fetchVideo(streamChannelUrl.removeRange(0, 1)) // Remove starting "/"
             val data =
-                webService.fetchVideo(streamChannelUrl.removeRange(0, 1)) // Remove starting "/"
+                webService.fetchVideo(streamChannelUrl.substringAfter("user/stream/video/").substringBefore("/channel/2")) // Remove starting "/"
             Result.Success(data.videoChannel)
         } catch (exception: Exception) {
             exception.message?.let { FirebaseCrashlytics.getInstance().log(it) }
@@ -225,7 +227,9 @@ class DefaultDataRepository(private val webService: WebService) : DataRepository
 
     override suspend fun keepVideoAlive(keepAliveUrl: String) {
         try {
-            webService.keepVideoAlive(keepAliveUrl.removeRange(0, 1)) // Remove starting "/"
+//            webService.keepVideoAlive(keepAliveUrl.removeRange(0, 1)) // Remove starting "/"
+            webService.keepVideoAlive(keepAliveUrl.substringAfter("user/stream/video/").substringBefore("/channel/2"))
+
         } catch (exception: Exception) {
             exception.message?.let { FirebaseCrashlytics.getInstance().log(it) }
         }
